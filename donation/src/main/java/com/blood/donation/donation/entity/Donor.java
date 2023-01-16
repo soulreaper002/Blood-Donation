@@ -2,8 +2,9 @@ package com.blood.donation.donation.entity;
 
 import java.util.Date;
 
-import org.springframework.data.annotation.Id;
+import jakarta.persistence.*;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -19,6 +20,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Donor {
         @Id
+        @Column(name = "donor_id", unique = true, nullable = false)
         @GeneratedValue(strategy=GenerationType.AUTO)
         private Long id;
         private String name;
