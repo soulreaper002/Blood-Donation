@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://soulreaper.database.windows.net:1433;database=soulreaperDB;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: soulreaper
+    password: Suraj@708
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect : org.hibernate.dialect.SQLServer2012Dialect
+
+server:
+  port: 9191
+
+  
