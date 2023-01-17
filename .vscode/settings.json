@@ -1,4 +1,6 @@
 {
     "java.compile.nullAnalysis.mode": "automatic",
-    "java.configuration.updateBuildConfiguration": "automatic"
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "appService.defaultWebAppToDeploy": "/subscriptions/90fc6953-8d11-443d-a9bb-e9760a61d6d2/AppServices/subscriptions/90fc6953-8d11-443d-a9bb-e9760a61d6d2/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/blood-donation",
+    "appService.deploySubpath": "donation/target/donation-0.0.1-SNAPSHOT.jar"
 }
